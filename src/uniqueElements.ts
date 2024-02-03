@@ -6,4 +6,12 @@
  */
 export function uniqueElements(array: number[]): number[] {
     // 請在此處寫下你的程式碼
+    // const ans: number[] = [];
+    // array.forEach((num) => {
+    //     if (!ans.includes(num)) {
+    //         ans.push(num);
+    //     }
+    // })
+    // return ans;
+    return [...new Set(array)];
 }

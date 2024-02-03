@@ -7,3 +7,17 @@
 
 // 請在下方寫下你的程式碼
 
+interface Data {
+    id: number,
+    title: string
+}
+
+export function fetchData(input: string): Promise<Data> {
+    // 在此實現函式
+    return new Promise((resolve, reject) => {
+        fetch(input)
+            .then((response) => response.json())
+            .then((data) => resolve(data))
+            .catch((error) => reject(error))
+    })
+}

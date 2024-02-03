@@ -12,4 +12,13 @@
  */
 export function classifyAge(age: number): string {
     // 請在此處寫下你的程式碼
+    if (age < 13) {
+        return "Child";
+    } else if (age < 20) {
+        return "Teenager";
+    } else if (age < 55) {
+        return "Adult";
+    } else {
+        return "Senior";
+    }
 }
